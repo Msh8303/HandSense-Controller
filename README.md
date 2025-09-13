@@ -10,31 +10,23 @@ By leveraging **Mediapipe Hand Tracking** for landmark extraction and a trained 
 
 This project illustrates the potential of **gesture-based human–computer interaction (HCI)** in enhancing **smart environments** and **assistive technology** solutions.  
 
----
-
-## 📂 Repository Structure  
-
-├── training notebook.ipynb # Jupyter Notebook for dataset preprocessing and SVM model training
-├── real-time-media-controller.py # Media control using hand gestures (PC/laptop)
-├── rasbery pi 3 led controller.py # Raspberry Pi LED control with hand gestures
-├── final_model_v2_svm.pkl # Trained model (must be present in project folder)
-└── README.md # Project documentation
-
-
 
 ---
 
 ## 📊 Dataset  
-The dataset used in this project consists of **hand landmarks extracted via Mediapipe Hands**, formatted into gesture-labeled samples.  
-👉 [Insert your dataset link here – e.g., Google Drive / Kaggle / GitHub release]  
+The dataset used in this project consists of essential details for training the gesture recognition model.  
+👉 [https://www.kaggle.com/datasets/marusagar/hand-gesture-detection-system]  
 
 ---
 
 ## 👤 Author Information  
-- **Name:** 
-- **Email:**  
-- **LinkedIn:** [linkedin.com/in/](https://linkedin.com/in/your-link)  
-- **GitHub:** [github.com/](https://github.com/yourusername)  
+- **Name:**  MohammadAmin Mohammadion Shabestari
+- **Email:**  Shabestari8303p@gmail.com
+- **LinkedIn:** [linkedin.com/in/](https://linkedin.com/in/mohammadamin-shabestari)  
+- **GitHub:** [github.com/](https://github.com/msh8303)
+- **Teammates:** Sogol Salamat / Yekta Khalili
+- **Course:** Introduction to Mechatronic systems by **DR.Mehdi Delrobaei**
+- **University:** K. N. Toosi University of Technology
 - **Date:** September 2025  
 
 ---
@@ -51,7 +43,7 @@ The dataset used in this project consists of **hand landmarks extracted via Medi
 3. **Model Training**  
    - Implemented in `training notebook.ipynb`.  
    - Classifier: **Support Vector Machine (SVM)** with multi-class support.  
-   - Saved model using **joblib** for real-time deployment.  
+   - Saved model for real-time deployment.  
 
 4. **Gesture Inference**  
    - Captured live webcam/Raspberry Pi camera feed.  
@@ -59,7 +51,7 @@ The dataset used in this project consists of **hand landmarks extracted via Medi
 
 5. **Applications**  
    - **Media Controller**: Sends keyboard events (`space`, arrow keys, volume) via `pyautogui`.  
-   - **IoT Controller**: Controls LEDs (on/off, flashing, swipe patterns) via **GPIO pins** on Raspberry Pi.  
+   - **IoT Controller**: Controls LEDs (on/off, flashing, swipe patterns) via **GPIO pins** on Raspberry Pi 3.  
 
 ---
 
@@ -84,8 +76,7 @@ The dataset used in this project consists of **hand landmarks extracted via Medi
   - Supports both software and hardware applications.  
 - **Limitations:**  
   - Sensitive to poor lighting conditions.  
-  - Single-hand tracking only (default Mediapipe setting).  
-  - Limited gesture vocabulary (can be expanded with further training).  
+  - Single-hand tracking only.
 
 ---
 
